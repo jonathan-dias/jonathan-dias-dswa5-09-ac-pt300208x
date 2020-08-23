@@ -6,9 +6,9 @@ angular.module('ifsp').controller('ContatosController',
         };
 
         $scope.contatos = [
-            { "_id": 1, "nome": "Jonathan Dias", "email": "jonathan.dias@aluno.ifsp.edu.br" },
-            { "_id": 2, "nome": "Gabriel Lemos", "email": "gabriel.lemos@aluno.ifsp.edu.br" },
-            { "_id": 3, "nome": "Romulo Icaro", "email": "romulo.icaro@aluno.ifsp.edu.br" },
+            { "_id": 1, "nome": "Fábio Teixeira", "email": "fabio.texeira@ifsp.edu.br" },
+            { "_id": 2, "nome": "Gabriel Lemos", "email": "gabriel.lemos@ifsp.edu.br" },
+            { "_id": 3, "nome": "Romulo Icaro", "email": "romulo.icaro@ifsp.edu.br" },
         ];
 
         $scope.filtro = '';
