@@ -6,7 +6,7 @@ module.exports = function() {
     //Instância do Express
     var app = express();
 
-    //Porta da aplicação
+    //Porta da aplicação: process.env.PORT || 80
     app.set('port', process.env.PORT || 80);
 
     //Middleware

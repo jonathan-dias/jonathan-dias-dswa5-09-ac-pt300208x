@@ -1,6 +1,6 @@
 angular.module('ifsp', ['ngRoute']);
 
-angular.module('ifsp', ['ngRoute']).config(function($routeProvider) {
+angular.module('ifsp', ['ngRoute', 'ngResource']).config(function($routeProvider) {
     $routeProvider.when('/contatos', {
         templateUrl: 'partials/contatos.html',
         controller: 'ContatosController'
