@@ -7,7 +7,7 @@ module.exports = function() {
     var app = express();
 
     //Porta da aplicação: process.env.PORT || 80
-    app.set('port', 8080);
+    app.set('port', process.env.PORT || 80);
 
     //Middleware
     app.use(express.static('./public'));
