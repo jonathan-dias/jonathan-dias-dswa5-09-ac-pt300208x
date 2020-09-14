@@ -16,10 +16,15 @@ angular.module('ifsp').controller('CursosController',
         }
         buscaCursos();
 
-        $scope.cursos = [
-            { "_id": 1, "curso": "Análise e Desenvolvimento de Sistema", "coordenador": "fabio.teixeira@ifsp.edu.br" },
-            { "_id": 2, "curso": "Administração", "coordenador": "gabriel.lemos@ifsp.edu.br" },
-            { "_id": 3, "curso": "Engenharia", "coordenador": "romulo.icaro@ifsp.edu.br" },
-        ];
+        $scope.remove = function(curso){
+            console.log(curso);
+            Curso.delete({ id: curso._id},
+                buscaCursos,
+                function(erro){
+                    console.log("Não foi possível remover o curso");
+                    console.log(erro);
+                    $scope.mensagem = { texto: "Não foi possível remover o curso"}
+                });
+        };
 
     });

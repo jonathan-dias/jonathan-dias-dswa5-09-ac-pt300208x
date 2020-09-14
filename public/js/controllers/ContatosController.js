@@ -22,12 +22,13 @@ angular.module('ifsp').controller('ContatosController',
             Contato.delete({ id: contato._id},
                 buscaContatos,
                 function(erro){
-                    console.log("Não fois possícel remover o contato");
+                    console.log("Não foi possível remover o contato");
                     console.log(erro);
+                    $scope.mensagem = { texto: "Não foi possível remover o contato"}
                 });
         };
 
-       /* $scope.contatos = [
+        /*$scope.contatos = [
             { "_id": 1, "nome": "Fábio Teixeira", "email": "fabio.texeira@ifsp.edu.br" },
             { "_id": 2, "nome": "Gabriel Lemos", "email": "gabriel.lemos@ifsp.edu.br" },
             { "_id": 3, "nome": "Romulo Icaro", "email": "romulo.icaro@ifsp.edu.br" },

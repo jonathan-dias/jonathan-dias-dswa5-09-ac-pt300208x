@@ -4,7 +4,5 @@ module.exports = function(app){
         .get(controller.listaContatos);
     app.route('/contatos/:id')
         .get(controller.obtemContato)
-        .delete(controller.removerContato);
-    app.get('/contatos', controller.listaContatos);
-    app.get('/contatos/:id', controller.obtemContato);
+        .delete(controller.removeContato);
 };
