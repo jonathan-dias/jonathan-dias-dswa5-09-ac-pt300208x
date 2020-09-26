@@ -27,12 +27,4 @@ angular.module('ifsp').controller('ContatosController',
                     $scope.mensagem = { texto: "Não foi possível remover o contato"}
                 });
         };
-
-        /*$scope.contatos = [
-            { "_id": 1, "nome": "Fábio Teixeira", "email": "fabio.texeira@ifsp.edu.br" },
-            { "_id": 2, "nome": "Gabriel Lemos", "email": "gabriel.lemos@ifsp.edu.br" },
-            { "_id": 3, "nome": "Romulo Icaro", "email": "romulo.icaro@ifsp.edu.br" },
-        ];*/
-
-        
     });
