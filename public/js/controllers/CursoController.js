@@ -25,7 +25,7 @@ angular.module('ifsp').controller('CursoController',
             .catch(function(erro){
                 $scope.mensagem = {texto: 'Não foi possível salvar'};
             })
-        }
+        };
     });
 
    

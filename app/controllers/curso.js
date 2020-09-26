@@ -36,7 +36,7 @@ module.exports = function(){
     };
 
     function adiciona(cursoNovo){
-        cursoNovo._id = ++ID_curso_INC;
+        cursoNovo._id = ++ID_CURSO_INC;
         cursos.push(cursoNovo);
         return cursoNovo;
     };

@@ -3,15 +3,14 @@ angular.module('ifsp').controller('ContatoController',
         var Contato = $resource('/contatos/:id');
         if($routeParams.contatoId) {  
             Contato.get({ id: $routeParams.contatoId },
-                    function(contato) {
-                        $scope.contato = contato;
-                    },
-                    function(erro) {
-                        $scope.mensagem = {
-                            texto: 'Não foi possível obter o contato.'
-                        };
-                        console.log($routeParams.contatoId);
-                    }
+                        function(contato) {
+                            $scope.contato = contato;
+                        },
+                        function(erro) {
+                            $scope.mensagem = {
+                                texto: 'Não foi possível obter o contato.'};
+                            console.log($routeParams.contatoId);
+                        }
 
             );
 
@@ -26,7 +25,5 @@ angular.module('ifsp').controller('ContatoController',
             .catch(function(erro){
                 $scope.mensagem = {texto: 'Não foi possível salvar'};
             })
-        }
-
-     
+        };
     });
